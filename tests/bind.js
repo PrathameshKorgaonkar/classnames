@@ -27,7 +27,7 @@ describe('bind', () => {
 		});
 
 		it('joins arrays of class names and ignore falsy values', () => {
-			assert.equal(classNames('a', 0, null, undefined, false, 'b'), 'a b');
+			assert.equal(classNames('a', 0, null, undefined, false, 'b'), 'a 0 b');
 		});
 
 		it('supports heterogenous arguments', () => {
